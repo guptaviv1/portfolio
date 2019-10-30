@@ -32,12 +32,11 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/jquery-2.1.4.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "src/assets/js/circle-progress.min.js",
               "src/assets/js/mixitup.min.js",
-              "src/assets/js/magnific-popup.min.js",
-              "src/assets/js/main.js"
+              "src/assets/js/magnific-popup.min.js"
             ],
             "es5BrowserSupport": true
           },
