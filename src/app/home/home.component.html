@@ -1,0 +1,25 @@
+<app-intro></app-intro>
+<!-- portfolio section start -->
+<section class="portfolio-section">
+  <div class="container">
+    <ul class="portfolio-filter controls">
+      <li class="control" data-filter="all">Work</li>
+      <li class="control" data-filter=".web">Web design</li>
+      <li class="control" data-filter=".digital">Digital design</li>
+      <li class="control" data-filter=".rened">3D Renedering</li>
+      <li class="control" data-filter=".brand">Brand Identity</li>
+    </ul>
+  </div>                       
+  <div class="container-fluid p-md-0 ">
+    <div class="row portfolios-area">
+      <div *ngFor="let project of projects" class="mix col-lg-6 col-md-6" [ngClass]="project.brand">
+        <a class="portfolio-item set-bg" [attr.data-setbg]="project.image">
+          <div class="pi-inner">
+            <a [href]="project.link" target="_blank"><h2>+ {{project.name}}</h2></a>
+          </div>						
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- portfolio section end -->
